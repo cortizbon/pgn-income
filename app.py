@@ -10,6 +10,6 @@ st.dataframe(df)
 
 fig, ax = plt.subplots(1, 1, figsize=(14, 8))
 
-df.groupby('year')['Valor'].sum().plot(kind='line', ax=ax)
+df.groupby('Año')['Valor'].sum().plot(kind='line', ax=ax)
 
 st.pyplot(fig)
